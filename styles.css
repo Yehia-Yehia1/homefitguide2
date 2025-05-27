@@ -28,22 +28,6 @@ body {
     font-weight: bold;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #00bcd4;
-}
 
 /* Hero Section */
 .hero-section {
