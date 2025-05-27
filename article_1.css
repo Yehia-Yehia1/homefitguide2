@@ -6,6 +6,16 @@ body {
         line-height: 1.6;
     }
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #222;
+    color: #fff;
+    flex-wrap: wrap;
+
+}
 article {
         max-width: 800px;
         margin: 40px auto;
@@ -14,6 +24,11 @@ article {
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 h1, h2 {
         color: #222;

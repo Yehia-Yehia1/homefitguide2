@@ -102,23 +102,6 @@ body {
     border-radius: 10px;
 }
 
-#home-page{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 15px 30px;
-    background-color: #111;
-    color: #fff;
-    flex-wrap: wrap;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    margin:0;
-}
-#home-page:hover{
-    color: #eee7aa;
-}
 /* Responsive design */
 @media (max-width: 768px) {
     #main-title {
