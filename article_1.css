@@ -94,3 +94,8 @@ a:hover {
         color:#ff0000;
         font-family: Arial, Helvetica, sans-serif;
     }
+#Explore{
+    display: flex;
+    justify-content: center;
+}
+

@@ -93,6 +93,10 @@ body {
 #articles{
     display: flex;
 }
+.Explore{
+    display: flex;
+    justify-content: center;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
