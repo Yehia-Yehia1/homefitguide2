@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download PDF Plans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-5xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-extrabold mb-6 text-center">Download Workout & Mobility PDFs</h1>
+        <p class="text-center mb-12 text-lg text-gray-600">Access premium workout plans and stretching guides to boost
+            your fitness at home</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- PDF Card Example -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                <img src="/images/workout-plan-cover.webp" alt="Home workout PDF plan cover"
+                    class="w-full h-48 object-cover rounded-xl mb-4">
+                <h2 class="text-2xl font-semibold mb-2">Home Workout Plan</h2>
+                <p class="text-gray-600 mb-4">12-week home training plan with step-by-step guidance. Printable and
+                    mobile-friendly.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-lg font-bold">$5.00</span>
+                    <a href="/pdfs/home-workout-plan.pdf"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">Download</a>
+                </div>
+            </div>
+
+            <!-- Add more PDF cards below -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                <img src="/images/mobility-guide-cover.webp" alt="Stretching and mobility PDF guide"
+                    class="w-full h-48 object-cover rounded-xl mb-4">
+                <h2 class="text-2xl font-semibold mb-2">Stretching & Mobility Guide</h2>
+                <p class="text-gray-600 mb-4">Improve flexibility, reduce pain, and recover faster with this complete
+                    stretching plan.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-lg font-bold">$5.00</span>
+                    <a href="/pdfs/stretching-mobility-guide.pdf"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">Download</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
