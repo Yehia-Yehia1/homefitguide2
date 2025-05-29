@@ -123,6 +123,9 @@ a:hover {
     margin-bottom: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+.image2{
+    margin-top:30px;
+}
 
 .article-link {
     display: inline-block;
