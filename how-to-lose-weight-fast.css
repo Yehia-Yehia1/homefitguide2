@@ -1,0 +1,71 @@
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 20px;
+max-width: 900px;
+color: #222;
+}
+
+header {
+border-bottom: 2px solid #444;
+margin-bottom: 20px;
+}
+
+h1 {
+font-size: 2rem;
+margin-bottom: 0;
+}
+
+header p {
+color: #666;
+font-size: 0.9rem;
+}
+
+h2 {
+color: #004080;
+margin-top: 30px;
+border-bottom: 2px solid #004080;
+padding-bottom: 5px;
+}
+
+main {
+margin-top: 10px;
+}
+
+.dos, .donts {
+background: #f7f9fc;
+padding: 15px 25px;
+border-radius: 6px;
+margin-bottom: 30px;
+}
+
+.dos ol, .donts ol {
+padding-left: 20px;
+}
+
+.dos li strong, .donts li strong {
+color: #004080;
+}
+
+.products ul {
+list-style-type: square;
+padding-left: 20px;
+}
+
+.products a {
+color: #0073e6;
+text-decoration: none;
+}
+
+.products a:hover {
+text-decoration: underline;
+}
+
+footer {
+margin-top: 50px;
+border-top: 1px solid #ccc;
+padding-top: 10px;
+color: #555;
+font-size: 0.8rem;
+text-align: center;
+}
