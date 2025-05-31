@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BMR Step-by-Step: How to Calculate Your Basal Metabolic Rate Easily</title>
+    <meta name="description"
+        content="Learn how to calculate your Basal Metabolic Rate (BMR) step-by-step with an easy interactive calculator. Understand why BMR matters and how it affects your daily calories." />
+    <meta name="keywords"
+        content="BMR calculation, basal metabolic rate, how to calculate BMR, calories calculator, daily calorie needs, BMR guide" />
+    <link rel="stylesheet" href="bmr-guide.css" />
+</head>
+
+<body>
+
+    <article>
+        <h1>BMR Step-by-Step: How to Calculate Your Basal Metabolic Rate Easily</h1>
+        <p>By: Yehia Yehia | 2025-05-31</p>
+
+        <section>
+            <h2>What is BMR and Why It Matters?</h2>
+            <p>BMR stands for Basal Metabolic Rate. It is the number of calories your body needs to maintain basic life
+                functions while at rest. Knowing your BMR helps you understand how many calories you burn daily without
+                extra activities.</p>
+        </section>
+
+        <section>
+            <h2>Step 1: Gather Your Information</h2>
+            <p>Before calculating your BMR, you need:</p>
+            <ul>
+                <li>Your sex (male or female)</li>
+                <li>Your weight in kilograms (kg)</li>
+                <li>Your height in centimeters (cm)</li>
+                <li>Your age in years</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Step 2: Use the BMR Formula</h2>
+            <p>The most used formula is the Mifflin-St Jeor Equation:</p>
+            <ul>
+                <li><strong>Men:</strong> BMR = 88.362 + (13.397 × weight) + (4.799 × height) – (5.677 × age)</li>
+                <li><strong>Women:</strong> BMR = 447.593 + (9.247 × weight) + (3.098 × height) – (4.330 × age)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Step 3: Calculate Your BMR Easily</h2>
+            <p>Use the calculator below to get your exact BMR quickly.</p>
+
+            <form id="bmrForm">
+                <label for="sex">Sex:</label>
+                <select id="sex" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" min="1" step="0.1" required />
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" min="1" step="0.1" required />
+
+                <label for="age">Age (years):</label>
+                <input type="number" id="age" min="1" required />
+
+                <button type="submit">Calculate BMR</button>
+            </form>
+
+            <div id="result" style="margin-top:20px; font-weight:bold;"></div>
+        </section>
+
+        <section>
+            <h2>Step 4: What Does Your BMR Mean?</h2>
+            <p>Your BMR is the minimum calories your body needs to function. If you want to maintain weight, eat around
+                your BMR plus extra calories for your daily activity. To lose weight, eat fewer calories than your total
+                daily energy expenditure (TDEE), which includes BMR plus activity.</p>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+            <p>Learn more about calculating your total daily calorie needs in our upcoming article <a
+                    href="/Coming_soon.html">How to Calculate Your BMR and Use It to Manage Weight</a>.</p>
+        </section>
+    </article>
+
+    <script>
+        document.getElementById('bmrForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const sex = document.getElementById('sex').value;
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const age = parseInt(document.getElementById('age').value);
+
+            if (!sex || !weight || !height || !age) {
+                alert('Please fill all fields correctly.');
+                return;
+            }
+
+            let bmr;
+
+            if (sex === 'male') {
+                bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+            } else if (sex === 'female') {
+                bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+            }
+
+            bmr = Math.round(bmr);
+
+            document.getElementById('result').textContent = 'Your BMR is: ' + bmr + ' calories/day.';
+        });
+    </script>
+
+</body>
+
+</html>
