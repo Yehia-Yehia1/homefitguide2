@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutrition Articles - Home Fit Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weight Loss Articles - Home Fit Guide</title>
 
     <link rel="stylesheet" href="styles.css" />
     <style>
@@ -59,9 +59,7 @@
             width: 250px;
             height: 100%;
             max-height: 100vh;
-            /* يحصر ارتفاع القائمة بارتفاع الشاشة */
             overflow-y: auto;
-            /* يسمح بالتمرير العمودي داخل القائمة */
             background-color: #222;
             color: #fff;
             display: flex;
@@ -70,7 +68,6 @@
             transition: left 0.3s ease;
             z-index: 1000;
         }
-
 
         .side-menu a {
             color: #fff;
@@ -87,13 +84,13 @@
             left: 0;
         }
 
-        .nutrition-section {
+        main.weightloss-section {
             padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
 
-        .nutrition-section h1 {
+        main.weightloss-section h1 {
             text-align: center;
             margin-bottom: 30px;
             font-size: 2rem;
@@ -129,6 +126,14 @@
         .article-content a:hover {
             color: #007bff;
         }
+
+        footer.footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
@@ -159,42 +164,51 @@
         <a href="weightloss.html">Weight Loss</a>
     </nav>
 
-    <main class="nutrition-section">
-        <h1>Nutrition Articles</h1>
+    <main class="weightloss-section">
+        <h1>Weight Loss Articles</h1>
 
         <div class="article-card">
-            <img src="Images/High protein food.webp" alt="High protein meal" />
+            <img src="Images/A frustrated man struggling to get rid of his excess belly fat.webp"
+                alt="A frustrated man struggling to get rid of his excess belly fat">
             <div class="article-content">
-                <a href="Best_healthy_meals_for_better_fitness.html">Best Healthy Meals For Better Fitness</a>
+                <a href="How to lose belly fat fast at home.html">How to Lose Belly Fat Fast at Home?</a>
             </div>
         </div>
 
         <div class="article-card">
-            <img src="Images/Two people reading a food label showing calories and nutrients on a healthy meal table.webp"
-                alt="People reading food labels" />
+            <img src="Images/Fat man wants to lose weight.webp" alt="Fat man wants to lose weight fast">
             <div class="article-content">
-                <a href="calories-guide.html">How Calories Work: Nutrition Basics</a>
+                <a href="how-to-lose-weight-fast.html">How to Lose Weight Fast: Do's and Don'ts</a>
             </div>
         </div>
 
         <div class="article-card">
-            <img src="Images/protein-intake.webp" alt="High-protein foods" />
+            <img src="Images/How Calories are Burned.webp"
+                alt="Infographic showing how calories are burned through BMR, daily activity, and exercise">
             <div class="article-content">
-                <a href="protien-intake.html">How Much Protein Do You Really Need?</a>
+                <a href="how-many-calories-should-you-eat.html">How Many Calories?</a>
             </div>
         </div>
 
         <div class="article-card">
-            <img src="Images/Healthy Recipe Book.webp" alt="Healthy recipe book" />
+            <img src="Images/Illustration of BMR Calculation.webp"
+                alt="illustration of basal metabolic rate calculation showing factors like age, weight, height, and gender">
             <div class="article-content">
-                <a href="Best-Healthy-Recipe-Books-to-Buy-in-2025.html">Best Healthy Recipe Books to Buy in 2025</a>
+                <a href="bmr-calculator.html">BMR Calculator</a>
             </div>
         </div>
 
-        <!-- يمكنك إضافة المزيد من المقالات هنا بنفس التنسيق -->
+        <div class="article-card">
+            <img src="Images/Infographic showing how to calculate TDEE using BMR and activity levels.webp"
+                alt="Infographic showing how to calculate TDEE using BMR and activity levels">
+            <div class="article-content">
+                <a href="how-to-calculate-your-tdee.html">How to Calculate Your TDEE</a>
+            </div>
+        </div>
+
     </main>
 
-    <footer class="footer" style="text-align: center; padding: 20px; background: #333; color: #fff;">
+    <footer class="footer">
         <p>&copy; 2025 Home Fitness Guide. All rights reserved.</p>
     </footer>
 
@@ -203,7 +217,6 @@
             document.getElementById('sideMenu').classList.toggle('active');
         }
 
-        // إغلاق القائمة عند النقر خارجها
         document.addEventListener('click', function (event) {
             const sideMenu = document.getElementById('sideMenu');
             const menuToggle = document.querySelector('.menu-toggle');

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutrition Articles - Home Fit Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fitness Articles - Home Fit Guide</title>
 
     <link rel="stylesheet" href="styles.css" />
     <style>
@@ -71,7 +71,6 @@
             z-index: 1000;
         }
 
-
         .side-menu a {
             color: #fff;
             text-decoration: none;
@@ -87,13 +86,13 @@
             left: 0;
         }
 
-        .nutrition-section {
+        main.fitness-section {
             padding: 20px;
             max-width: 1000px;
             margin: auto;
         }
 
-        .nutrition-section h1 {
+        main.fitness-section h1 {
             text-align: center;
             margin-bottom: 30px;
             font-size: 2rem;
@@ -129,6 +128,14 @@
         .article-content a:hover {
             color: #007bff;
         }
+
+        footer.footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
@@ -159,42 +166,51 @@
         <a href="weightloss.html">Weight Loss</a>
     </nav>
 
-    <main class="nutrition-section">
-        <h1>Nutrition Articles</h1>
+    <main class="fitness-section">
+        <h1>Fitness Articles</h1>
 
         <div class="article-card">
-            <img src="Images/High protein food.webp" alt="High protein meal" />
+            <img src="Images/Fit man drinking water after workout to support healthy weight loss.webp"
+                alt="Fit man drinking water after workout to support healthy weight loss">
             <div class="article-content">
-                <a href="Best_healthy_meals_for_better_fitness.html">Best Healthy Meals For Better Fitness</a>
+                <a href="How_Drinking_Water_Boosts_Weight_Loss.html">How Drinking Water Boosts Weight Loss: Proven
+                    Benefits and Tips</a>
             </div>
         </div>
 
         <div class="article-card">
-            <img src="Images/Two people reading a food label showing calories and nutrients on a healthy meal table.webp"
-                alt="People reading food labels" />
+            <img src="Images/Workout & Mobility Plan PDF Cover.webp" alt="Workout & Mobility Plan PDF Cover">
             <div class="article-content">
-                <a href="calories-guide.html">How Calories Work: Nutrition Basics</a>
+                <a href="Best-Home-Workouts-and-Mobility-Plans.html">Workout and Mobility Plans PDFs</a>
             </div>
         </div>
 
         <div class="article-card">
-            <img src="Images/protein-intake.webp" alt="High-protein foods" />
+            <img src="Images/Injury Frustration.webp" alt="Injured Man">
             <div class="article-content">
-                <a href="protien-intake.html">How Much Protein Do You Really Need?</a>
+                <a href="how-to-prevent-injuries-during-home-workout.html">How to Prevent Injuries During Home
+                    Workout</a>
             </div>
         </div>
 
-        <div class="article-card">
-            <img src="Images/Healthy Recipe Book.webp" alt="Healthy recipe book" />
-            <div class="article-content">
-                <a href="Best-Healthy-Recipe-Books-to-Buy-in-2025.html">Best Healthy Recipe Books to Buy in 2025</a>
-            </div>
+        <div class="featured-article">
+            <img src="Images/Person performing hybrid workout with weights and stretching.webp"
+                alt="Person performing hybrid workout with weights and stretching" class="article-img" />
+            <a href="hybrid-training.html" class="article-link">Hybrid Training</a>
+        </div>
+        </section>
+
+        <div class="featured-article">
+            <img src="Images/Walking person enjoying outdoor exercise for health and fitness.webp"
+                alt="Walking person enjoying outdoor exercise for health and fitness" class="article-img" />
+            <a href="walking-exercise.html" class="article-link">How Walking Can Be an Exercise</a>
+        </div>
+        </section>
         </div>
 
-        <!-- يمكنك إضافة المزيد من المقالات هنا بنفس التنسيق -->
     </main>
 
-    <footer class="footer" style="text-align: center; padding: 20px; background: #333; color: #fff;">
+    <footer class="footer">
         <p>&copy; 2025 Home Fitness Guide. All rights reserved.</p>
     </footer>
 
@@ -203,7 +219,6 @@
             document.getElementById('sideMenu').classList.toggle('active');
         }
 
-        // إغلاق القائمة عند النقر خارجها
         document.addEventListener('click', function (event) {
             const sideMenu = document.getElementById('sideMenu');
             const menuToggle = document.querySelector('.menu-toggle');
