@@ -22,7 +22,6 @@ h1, h2, h3 {
 p {
     line-height: 1.6;
     margin-bottom: 15px;
-    color: #444;
 }
 
 a {
@@ -36,48 +35,82 @@ a:hover {
 
 /* Top bar */
 .top-bar {
-    width: 100%;
-    background-color: #1b971b;
-    color: white;
-    height: 50px;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        width: 100%;
+        top:0;
+}
+.logo {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-.left-space {
-    width: 120px;
+    align-items: center;
+    gap: 10px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+.logo-img {
+    width: 40px;
+    height: 70px;
 }
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links li a {
-    color: white;
+.logo-text {
     text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
     font-weight: bold;
-    font-size: 14px;
-    padding-top: 6px;
-    display: inline-block;
 }
 
-.nav-links li a:hover {
-    text-decoration: underline;
+.menu-toggle {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            max-height: 100vh;
+            /* يحصر ارتفاع القائمة بارتفاع الشاشة */
+            overflow-y: auto;
+            /* يسمح بالتمرير العمودي داخل القائمة */
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+
+        .side-menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-bottom: 1px solid #444;
+        }
+
+        .side-menu a:hover {
+            background-color: #444;
+        }
+
+        .side-menu.active {
+            left: 0;
+        }
 
 /* Logo placeholder */
 .logo {
@@ -145,8 +178,8 @@ a:hover {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #1b971b;
-    color: #ffffff;
+    background-color: #333;
+    color: white;
     font-weight: bold;
     margin-top: 40px;
 }
@@ -192,20 +225,6 @@ button:hover, .btn:hover {
         width: 100%;
     }
 }
-.top-bar {
-    width: 100%;
-    background-color: #1b971b;
-    color: white;
-    height: 50px;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
 
 .logo {
     display: flex;
@@ -219,13 +238,6 @@ button:hover, .btn:hover {
     object-fit: contain;
 }
 
-.logo-text {
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    line-height: 1;
-    padding-bottom: 4px;
-}
 
 .nav-links {
     list-style: none;
