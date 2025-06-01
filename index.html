@@ -2,27 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Discover the top adjustable dumbbells for home gyms in 2025. Compare features, prices, and find the perfect set to boost your workouts.">
+        content="Discover the top adjustable dumbbells for home gyms in 2025. Compare features, prices, and find the perfect set to boost your workouts." />
     <meta name="keywords"
-        content="home workouts, fitness equipment reviews, healthy meal plans, workout routines, weight loss at home, amazon fitness gear, dumbbells, resistance bands, yoga mats, high-protein recipes">
-    <meta name="author" content="Home Fit Guide">
+        content="home workouts, fitness equipment reviews, healthy meal plans, workout routines, weight loss at home, amazon fitness gear, dumbbells, resistance bands, yoga mats, high-protein recipes" />
+    <meta name="author" content="Home Fit Guide" />
     <title>Home Fit Guide</title>
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="index.html">
+    <link rel="canonical" href="index.html" />
 
-    <!-- Open Graph for social media -->
-    <meta property="og:title" content="Top Adjustable Dumbbells for Home Gyms in 2025">
+    <meta property="og:title" content="Top Adjustable Dumbbells for Home Gyms in 2025" />
     <meta property="og:description"
-        content="Compare the best adjustable dumbbells of 2025 for home fitness. Features, prices, and expert picks.">
-    <meta property="og:image" content="https://homefitnessguide.netlify.app/Images/Gym_equipment.webp">
-    <meta property="og:url" content="https://homefitnessguide.netlify.app/best-adjustable-dumbbells-2025">
-    <meta property="og:type" content="article">
+        content="Compare the best adjustable dumbbells of 2025 for home fitness. Features, prices, and expert picks." />
+    <meta property="og:image" content="https://homefitnessguide.netlify.app/Images/Gym_equipment.webp" />
+    <meta property="og:url" content="https://homefitnessguide.netlify.app/best-adjustable-dumbbells-2025" />
+    <meta property="og:type" content="article" />
 
-    <!-- Google Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6VE8BYV6R"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -31,152 +28,246 @@
         gtag('config', 'G-X6VE8BYV6R');
     </script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .top-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-text {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            position: absolute;
+            left: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+
+        .side-menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-bottom: 1px solid #444;
+        }
+
+        .side-menu a:hover {
+            background-color: #444;
+        }
+
+        .side-menu.active {
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
     <header class="top-bar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <div class="logo">
-            <img src="logo.png" alt="HomeFitGuide Logo" class="logo-img">
+            <img src="logo.png" alt="HomeFitGuide Logo" class="logo-img" />
             <a href="index.html" class="logo-text">Home Fitness Guide</a>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="/Coming_soon.html">Affiliates</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/PDFs.html">PDFs</a></li>
-                <li><a href="/Coming_soon.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <nav class="side-menu" id="sideMenu">
+        <a href="/PDFs.html">PDFs</a>
+        <a href="/about.html">About</a>
+        <a href="/Coming_soon.html">Contact</a>
+        <a href="/Coming_soon.html">Affiliates</a>
+        <a href="/nutrition.html">Nutrition</a>
+        <a href="/Coming_soon.html">Sleep</a>
+        <a href="/products.html">Products</a>
+        <a href="/Coming_soon.html">Fitness</a>
+        <a href="/Coming_soon.html">Supplements</a>
+    </nav>
+
     <main class="hero-section">
-        <img src="A_man_running.jpg" alt="A man running in nature on a sunny day" class="hero-img">
+        <img src="A_man_running.jpg" alt="A man running in nature on a sunny day" class="hero-img" />
         <h2 class="hero-title">Your Complete Guide To Home Fitness, Nutrition & Gear</h2>
     </main>
 
-    <hr>
+    <hr />
+
     <div id="articles">
         <section class="featured-article">
             <img src="Images/Gym_equipment.webp"
                 alt="Home gym equipment including dumbbells, resistance bands, yoga mat, dips bar, and pull-up bar"
-                class="article-img">
+                class="article-img" />
             <a href="Best_home_gym_equipment_In_2025.html" class="article-link">Best Home Workout Equipment 2025 -
                 Ultimate Guide To Build Strength Fast</a>
 
             <div class="featured-article">
                 <img src="Images/High protein food.webp"
                     alt="High protein meal with grilled chicken breasts,brown rice, steamed broccoli, fresh spinach, avocado, an a glass of chocolate whey protein smoothie on a light wooden table"
-                    class="article-img">
+                    class="article-img" />
                 <a href="Best_healthy_meals_for_better_fitness.html" class="article-link">Best Healthy Meals For Better
                     Fitness</a>
             </div>
 
             <div class="featured-article">
                 <img src="Images/A frustrated man struggling to get rid of his excess belly fat.webp"
-                    alt="A frustrated man struggling to get rid of his excess belly fat" class="article-img">
+                    alt="A frustrated man struggling to get rid of his excess belly fat" class="article-img" />
                 <a href="How to lose belly fat fast at home.html" class="article-link">How to Lose Belly Fat Fast at
                     Home?</a>
             </div>
+
             <div class="featured-article">
-                <img src="Images/Healthy Recipe Book.webp" alt="Healthy Recepi Book" class="article-img">
+                <img src="Images/Healthy Recipe Book.webp" alt="Healthy Recepi Book" class="article-img" />
                 <a href="Best-Healthy-Recipe-Books-to-Buy-in-2025.html" class="article-link">Best Healthy Recipe Books
                     to Buy in 2025</a>
             </div>
+
             <div class="featured-article">
                 <img src="Images/Fat man wants to lose weight.webp" alt="Fat man wants to lose weight fast"
-                    class="article-img">
+                    class="article-img" />
                 <a href="how-to-lose-weight-fast.html" class="article-link">How to Lose Weight Fast: Do's and Don'ts</a>
             </div>
+
             <div class="featured-article">
                 <img src="Images/How Calories are Burned.webp"
                     alt="Infographic showing how calories are burned through BMR, daily activity, and exercise"
-                    class="article-img">
-                <a href="how-many-calories-should-you-eat.html" class="article-link">How Many Calories?
-
-                </a>
+                    class="article-img" />
+                <a href="how-many-calories-should-you-eat.html" class="article-link">How Many Calories?</a>
             </div>
+
             <div class="featured-article">
                 <img src="Images/Infographic showing how to calculate TDEE using BMR and activity levels.webp"
-                    alt="Infographic showing how to calculate TDEE using BMR and activity levels" class="article-img">
-                <a href="how-to-calculate-your-tdee.html" class="article-link">How to Calculate Your TDEE
-                </a>
+                    alt="Infographic showing how to calculate TDEE using BMR and activity levels" class="article-img" />
+                <a href="how-to-calculate-your-tdee.html" class="article-link">How to Calculate Your TDEE</a>
             </div>
+
             <div class="featured-article">
                 <img src="Images/Person performing hybrid workout with weights and stretching.webp"
-                    alt="Person performing hybrid workout with weights and stretching" class="article-img">
-                <a href="hybrid-training.html" class="article-link">Hybrid Training
-
+                    alt="Person performing hybrid workout with weights and stretching" class="article-img" />
+                <a href="hybrid-training.html" class="article-link">Hybrid Training</a>
             </div>
-
-
         </section>
 
         <section class="featured-article">
             <img src="Modern home gym.png"
                 alt="High-end home gym setup with adjustable dumbbells, smart scale, protein supplement, and recovery tools neatly arranged in a modern room"
-                class="article-img">
+                class="article-img" />
             <a href="TopHigh-End_Home_Fitness_Essentials_In_2025.html" class="article-link">Transform Your Home Workouts
                 in 2025 with These Elite Fitness Essentials</a>
 
             <img src="Images/Fit man drinking water after workout to support healthy weight loss.webp"
-                alt="Fit man drinking water after workout to support healthy weight loss" class="article-img image2">
+                alt="Fit man drinking water after workout to support healthy weight loss" class="article-img image2" />
             <a href="How_Drinking_Water_Boosts_Weight_Loss.html" class="article-link">How Drinking Water Boosts Weight
                 Loss: Proven Benefits and Tips</a>
 
             <div class="featured-article">
                 <img src="Images/Workout & Mobility Plan PDF Cover.webp" alt="Workout & Mobility Plan PDF Cover"
-                    class="article-img">
+                    class="article-img" />
                 <a href="Best-Home-Workouts-and-Mobility-Plans.html" class="article-link">Workout and Mobility Plans
                     PDFs</a>
             </div>
-            <div class="featured-article">
-                <img src="Images/Injury Frustration.webp" alt="Injured Man" class="article-img">
-                <a href="how-to-prevent-injuries-during-home-workout.html" class="article-link">How to Prevent Injuries
-                    During Home Workout
 
-                </a>
+            <div class="featured-article">
+                <img src="Images/Injury Frustration.webp" alt="Injured Man" class="article-img" />
+                <a href="how-to-prevent-injuries-during-home-workout.html" class="article-link">How to Prevent Injuries
+                    During Home Workout</a>
             </div>
+
             <div class="featured-article">
                 <img src="Images/Two people reading a food label showing calories and nutrients on a healthy meal table.webp"
                     alt="Two people reading a food label showing calories and nutrients on a healthy meal table"
-                    class="article-img">
-                <a href="calories-guide.html" class="article-link">How Calories Work
-
-                </a>
+                    class="article-img" />
+                <a href="calories-guide.html" class="article-link">How Calories Work</a>
             </div>
+
             <div class="featured-article">
                 <img src="Images/Illustration of BMR Calculation.webp"
                     alt="illustration of basal metabolic rate calculation showing factors like age, weight, height, and gender"
-                    class="article-img">
-                <a href="bmr-calculator.html" class="article-link">BMR Calculator
-
-                </a>
+                    class="article-img" />
+                <a href="bmr-calculator.html" class="article-link">BMR Calculator</a>
             </div>
+
             <div class="featured-article">
                 <img src="Images/protein-intake.webp"
                     alt="A portion of high-protein food including chicken, eggs, and legumes on a wooden table"
-                    class="article-img">
-                <a href="protien-intake.html" class="article-link">How Much Protein Do You Really Need?
-
-                </a>
+                    class="article-img" />
+                <a href="protien-intake.html" class="article-link">How Much Protein Do You Really Need?</a>
             </div>
+
             <div class="featured-article">
-                <img src="Images/Walking person enjoying outdoor exercise for health and fitness.webp" alt="Walking person enjoying outdoor exercise for health and fitness
-" class="article-img">
-                <a href="walking-exercise.html" class="article-link">How Walking Can Be an Exercise
-
-                </a>
+                <img src="Images/Walking person enjoying outdoor exercise for health and fitness.webp"
+                    alt="Walking person enjoying outdoor exercise for health and fitness" class="article-img" />
+                <a href="walking-exercise.html" class="article-link">How Walking Can Be an Exercise</a>
             </div>
-
-
-
         </section>
     </div>
 
     <footer class="footer">
         <p>&copy; 2025 Home Fitness Guide. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sideMenu').classList.toggle('active');
+        }
+
+        document.addEventListener('click', function (event) {
+            const sideMenu = document.getElementById('sideMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const isClickInsideMenu = sideMenu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && sideMenu.classList.contains('active')) {
+                sideMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 
 </html>

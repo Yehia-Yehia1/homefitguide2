@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition Articles - Home Fit Guide</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .top-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-text {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            position: absolute;
+            left: 20px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+        }
+
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #222;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+
+        .side-menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-bottom: 1px solid #444;
+        }
+
+        .side-menu a:hover {
+            background-color: #444;
+        }
+
+        .side-menu.active {
+            left: 0;
+        }
+
+        .nutrition-section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .nutrition-section h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .article-card {
+            display: flex;
+            flex-direction: column;
+            background: #f9f9f9;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article-content a {
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .article-content a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <img src="logo.png" alt="HomeFitGuide Logo" class="logo-img" />
+            <a href="index.html" class="logo-text">Home Fitness Guide</a>
+        </div>
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+        <a href="/PDFs.html">PDFs</a>
+        <a href="/about.html">About</a>
+        <a href="/Coming_soon.html">Contact</a>
+        <a href="/Coming_soon.html">Affiliates</a>
+        <a href="/nutrition.html">Nutrition</a>
+        <a href="/Coming_soon.html">Sleep</a>
+        <a href="/products.html">Products</a>
+        <a href="/Coming_soon.html">Fitness</a>
+        <a href="/Coming_soon.html">Supplements</a>
+    </nav>
+
+    <main class="nutrition-section">
+        <h1>Nutrition Articles</h1>
+
+        <div class="article-card">
+            <img src="Images/High protein food.webp" alt="High protein meal" />
+            <div class="article-content">
+                <a href="Best_healthy_meals_for_better_fitness.html">Best Healthy Meals For Better Fitness</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <img src="Images/Two people reading a food label showing calories and nutrients on a healthy meal table.webp"
+                alt="People reading food labels" />
+            <div class="article-content">
+                <a href="calories-guide.html">How Calories Work: Nutrition Basics</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <img src="Images/protein-intake.webp" alt="High-protein foods" />
+            <div class="article-content">
+                <a href="protien-intake.html">How Much Protein Do You Really Need?</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <img src="Images/Healthy Recipe Book.webp" alt="Healthy recipe book" />
+            <div class="article-content">
+                <a href="Best-Healthy-Recipe-Books-to-Buy-in-2025.html">Best Healthy Recipe Books to Buy in 2025</a>
+            </div>
+        </div>
+
+        <!-- يمكنك إضافة المزيد من المقالات هنا بنفس التنسيق -->
+    </main>
+
+    <footer class="footer" style="text-align: center; padding: 20px; background: #333; color: #fff;">
+        <p>&copy; 2025 Home Fitness Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sideMenu').classList.toggle('active');
+        }
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', function (event) {
+            const sideMenu = document.getElementById('sideMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const isClickInsideMenu = sideMenu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && sideMenu.classList.contains('active')) {
+                sideMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
