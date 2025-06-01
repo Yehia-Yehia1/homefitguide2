@@ -4,63 +4,83 @@
 
 <url>
     <loc>https://homefitnessguide.netlify.app/</loc>
+    <priority>1.0</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/about.html</loc>
+    <priority>0.5</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/PDFs.html</loc>
+    <priority>0.5</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/Coming_soon.html</loc>
+    <priority>0.5</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/Best_home_gym_equipment_In_2025.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/Best_healthy_meals_for_better_fitness.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/How%20to%20lose%20belly%20fat%20fast%20at%20home.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/Best-Healthy-Recipe-Books-to-Buy-in-2025.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/how-to-lose-weight-fast.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/how-many-calories-should-you-eat.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/how-to-calculate-your-tdee</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/hybrid-training</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/TopHigh-End_Home_Fitness_Essentials_In_2025.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/How_Drinking_Water_Boosts_Weight_Loss.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/Best-Home-Workouts-and-Mobility-Plans.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/how-to-prevent-injuries-during-home-workout.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/calories-guide.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/bmr-calculator.html</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/protein-intake</loc>
+    <priority>0.8</priority>
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/walking-exercise</loc>
+    <priority>0.8</priority>
 </url>
 
 </urlset>
