@@ -75,15 +75,14 @@ padding-bottom: 0.5rem;
 }
 
 .faq-question {
-background: none;
-border: none;
 width: 100%;
 text-align: left;
-font-weight: bold;
-font-size: 1.1rem;
+padding: 15px;
+background: #000000;
+border: none;
+font-size: 1em;
+font-weight: 600;
 cursor: pointer;
-padding: 0.5rem 0;
-position: relative;
 }
 
 .faq-question::after {

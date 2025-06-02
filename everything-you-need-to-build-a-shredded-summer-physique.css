@@ -51,16 +51,14 @@ padding-bottom: 1rem;
 }
 
 .faq-question {
-background: none;
-border: none;
-font-size: 1rem;
-font-weight: bold;
-cursor: pointer;
-display: block;
 width: 100%;
 text-align: left;
-margin-bottom: 0.5rem;
-padding: 0;
+padding: 15px;
+background: #000000;
+border: none;
+font-size: 1em;
+font-weight: 600;
+cursor: pointer;
 }
 
 .faq-answer {
