@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calcium Calculator for Better Bone Health</title>
+    <meta name="description"
+        content="Easily calculate your daily calcium intake to support strong bones and prevent osteoporosis.">
+    <meta name="keywords"
+        content="calcium calculator, daily calcium intake, bone health calculator, osteoporosis prevention, nutrition tool">
+    <link rel="canonical" href="https://homefitnessguide.netlify.app/Calcium-intake.html" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        header,
+        footer {
+            background-color: #004085;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #004085;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 0.4rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.6rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calcium Calculator for Better Bone Health</h1>
+        <p>Calculate your daily calcium intake easily and find out if you're meeting your needs!</p>
+    </header>
+
+    <div class="container">
+        <h2>How Much Calcium Are You Getting?</h2>
+        <p>Enter the number of servings you typically consume for each food group below:</p>
+
+        <form id="calciumForm">
+            <label for="milk">Cups of Milk (300 mg calcium per cup):</label>
+            <input type="number" id="milk" min="0" step="0.1">
+
+            <label for="yogurt">Cups of Yogurt (400 mg calcium per cup):</label>
+            <input type="number" id="yogurt" min="0" step="0.1">
+
+            <label for="cheese">Ounces of Cheese (200 mg calcium per ounce):</label>
+            <input type="number" id="cheese" min="0" step="0.1">
+
+            <label for="greens">Cups of Leafy Greens (100 mg calcium per cup):</label>
+            <input type="number" id="greens" min="0" step="0.1">
+
+            <label for="fortified">Cups of Fortified Foods (300 mg calcium per cup):</label>
+            <input type="number" id="fortified" min="0" step="0.1">
+
+            <button type="button" onclick="calculateCalcium()">Calculate Calcium Intake</button>
+        </form>
+
+        <div id="result"></div>
+
+        <h2>Why Calcium Matters</h2>
+        <p>Calcium is essential for strong bones and preventing osteoporosis. Adults typically need between 1,000 and
+            1,200 mg of calcium daily, depending on age and gender. Use this calculator to track your intake and make
+            sure you're getting enough!</p>
+
+        <h2>Tips to Boost Your Calcium Intake</h2>
+        <ul>
+            <li>Eat more leafy greens, nuts, and dairy or fortified alternatives.</li>
+            <li>Consider supplements if you can't get enough from food.</li>
+            <li>Pair calcium-rich foods with vitamin D sources for better absorption.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function calculateCalcium() {
+            const milk = parseFloat(document.getElementById('milk').value) || 0;
+            const yogurt = parseFloat(document.getElementById('yogurt').value) || 0;
+            const cheese = parseFloat(document.getElementById('cheese').value) || 0;
+            const greens = parseFloat(document.getElementById('greens').value) || 0;
+            const fortified = parseFloat(document.getElementById('fortified').value) || 0;
+
+            const totalCalcium =
+                (milk * 300) +
+                (yogurt * 400) +
+                (cheese * 200) +
+                (greens * 100) +
+                (fortified * 300);
+
+            const recommended = 1200;
+
+            let message = `Your estimated daily calcium intake is ${totalCalcium} mg.`;
+            if (totalCalcium < recommended) {
+                message += ' You may need to increase your calcium intake to meet the recommended daily amount of 1,200 mg.';
+            } else {
+                message += ' Great job! You are meeting or exceeding the recommended daily calcium intake.';
+            }
+
+            document.getElementById('result').innerText = message;
+        }
+    </script>
+</body>
+
+</html>
