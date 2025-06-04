@@ -1,0 +1,94 @@
+/* mindful-eating.css */
+
+/* قاعدة عامة */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* الحاوية الأساسية للمقال */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* عنوان المقال */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    text-align: center;
+}
+
+/* العناوين الفرعية */
+h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 5px;
+}
+
+/* نص الفقرات */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* القوائم */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* روابط المقال */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #0049b7;
+    text-decoration: underline;
+}
+
+/* صورة المقال */
+.article-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(26, 115, 232, 0.2);
+}
+
+/* تحسين قابلية القراءة */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
