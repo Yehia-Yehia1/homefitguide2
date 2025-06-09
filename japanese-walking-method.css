@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Body */
+body {
+font-family: 'Segoe UI', sans-serif;
+font-size: 16px;
+line-height: 1.6;
+background-color: #ffffff;
+color: #222;
+padding: 20px;
+max-width: 850px;
+margin: auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+font-weight: 700;
+color: #111;
+margin-bottom: 12px;
+margin-top: 28px;
+}
+
+/* Links */
+a {
+color: #0056b3;
+text-decoration: underline;
+font-weight: 600;
+}
+
+a:focus,
+a:hover {
+background-color: #e8f0fe;
+outline: 2px solid #4285f4;
+outline-offset: 2px;
+}
+
+/* Internal link styling for accessibility */
+a[data-internal] {
+border-bottom: 2px dashed #009688;
+}
+
+/* Paragraphs */
+p {
+margin-bottom: 16px;
+}
+
+/* Images */
+img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 24px auto;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FAQ Section */
+.faq-item {
+margin-bottom: 18px;
+}
+
+.faq-question {
+font-weight: 600;
+cursor: pointer;
+background-color: #f7f7f7;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+transition: background 0.3s;
+}
+
+.faq-question:focus,
+.faq-question:hover {
+background-color: #e0f0ff;
+outline: 2px solid #0056b3;
+outline-offset: 2px;
+}
+
+.faq-answer {
+display: none;
+padding: 10px 14px;
+background-color: #f9f9f9;
+border-left: 3px solid #2196f3;
+margin-top: 6px;
+border-radius: 4px;
+}
+
+/* Common mistakes section */
+.common-mistakes {
+background-color: #fff3cd;
+color: #856404;
+border-left: 5px solid #ffeeba;
+padding: 16px;
+margin-top: 30px;
+border-radius: 6px;
+}
+
+/* Table of contents */
+#toc {
+margin: 24px 0;
+padding: 12px 16px;
+background: #f2f2f2;
+border-left: 4px solid #2196f3;
+border-radius: 6px;
+}
+
+/* JSON-LD hidden */
+script[type="application/ld+json"] {
+display: none;
+}
