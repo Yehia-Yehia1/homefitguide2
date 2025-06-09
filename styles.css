@@ -137,6 +137,12 @@ a:hover {
     color: #222;
     margin-top: 10px;
 }
+#search-bar {
+display: flex;
+justify-content: center; 
+align-items: center;     
+margin: 20px auto;       
+}
 
 /* Article Section */
 .featured-article {

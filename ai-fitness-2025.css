@@ -1,0 +1,104 @@
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #222;
+background-color: #fff;
+margin: 0;
+padding: 20px;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+h1, h2, h3 {
+color: #111;
+margin-top: 1.5em;
+margin-bottom: 0.5em;
+font-weight: 700;
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+h2 {
+font-size: 1.8rem;
+}
+
+h3 {
+font-size: 1.4rem;
+}
+
+p {
+margin-bottom: 1em;
+font-size: 1rem;
+}
+
+a {
+color: #0055aa;
+background-color: #eaf4ff;
+padding: 2px 4px;
+border-radius: 3px;
+text-decoration: none;
+font-weight: 600;
+transition: background-color 0.3s ease, color 0.3s ease;
+outline-offset: 3px;
+position: relative;
+}
+
+a[href^="http"]:not([href*="homefitnessguide.netlify.app"])::after {
+content: " ↗";
+font-size: 0.9em;
+color: #666;
+}
+
+a:hover,
+a:focus {
+color: #ffffff;
+background-color: #0055aa;
+text-decoration: none;
+}
+
+ul, ol {
+margin-left: 1.5em;
+margin-bottom: 1em;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 1em 0;
+border-radius: 4px;
+}
+
+.faq-section, .common-mistakes {
+background-color: #f9f9f9;
+padding: 15px 20px;
+border-left: 4px solid #0066cc;
+margin-top: 2em;
+}
+
+.faq-section h2,
+.common-mistakes h2 {
+margin-top: 0;
+}
+
+@media (max-width: 600px) {
+body {
+    padding: 15px 10px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+}
