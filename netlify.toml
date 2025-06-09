@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://www.homefitnessguide.netlify.app/*"
+  to = "https://homefitnessguide.netlify.app/:splat"
+  status = 301
+  force = true
