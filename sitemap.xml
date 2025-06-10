@@ -103,7 +103,7 @@
     <priority>0.8</priority>
 </url>
 <url>
-    <loc>https://homefitnessguide.netlify.app/protien-intake</loc>
+    <loc>https://homefitnessguide.netlify.app/protein-intake</loc>
     <priority>0.8</priority>
 </url>
 <url>
@@ -168,6 +168,10 @@
 </url>
 <url>
     <loc>https://homefitnessguide.netlify.app/mental-fitness</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/how-to-build-muscles-in-a-calorie-deficit</loc>
     <priority>0.8</priority>
 </url>
 
