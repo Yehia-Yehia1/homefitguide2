@@ -182,5 +182,21 @@
     <loc>https://homefitnessguide.netlify.app/stress-management-techniques</loc>
     <priority>0.8</priority>
 </url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/15-exercises-that-burn-the-most-calories</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/everything-about-vo2-max</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/ectomorph-body-type</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/endomorph-body-type</loc>
+    <priority>0.8</priority>
+</url>
 
 </urlset>
