@@ -27,3 +27,11 @@ function searchArticles() {
         }
     });
 }
+
+// تشغيل البحث عند الضغط على Enter
+document.getElementById("searchInput").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        searchArticles();
+    }
+});

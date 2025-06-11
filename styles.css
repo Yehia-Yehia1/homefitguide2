@@ -263,3 +263,6 @@ button:hover, .btn:hover {
 .nav-links li a:hover {
     text-decoration: underline;
 }
+#searchInput{
+    height: 30px;
+}
