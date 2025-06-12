@@ -1,0 +1,139 @@
+/* Base Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: system-ui, sans-serif;
+font-size: 18px;
+line-height: 1.7;
+background: #fefefe;
+color: #111;
+padding: 1rem;
+max-width: 800px;
+margin: auto;
+}
+
+img {
+max-width: 100%;
+height: auto;
+border-radius: 12px;
+margin: 1.5rem 0;
+}
+
+h1, h2, h3 {
+color: #002244;
+margin: 2rem 0 1rem 0;
+}
+
+h1 {
+font-size: 2.2rem;
+text-align: center;
+}
+
+h2 {
+font-size: 1.6rem;
+}
+
+h3 {
+font-size: 1.3rem;
+}
+
+p {
+margin-bottom: 1.5rem;
+}
+
+strong {
+color: #000;
+}
+
+ul, ol {
+padding-left: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+li {
+margin-bottom: 0.5rem;
+}
+
+a {
+color: #0066cc;
+text-decoration: underline;
+}
+
+a:visited {
+color: #004488;
+}
+
+a:focus, a:hover {
+outline: 2px solid #004488;
+background: #eef6ff;
+}
+
+header {
+text-align: center;
+padding-bottom: 2rem;
+}
+
+section {
+padding-bottom: 2rem;
+border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+border-bottom: none;
+}
+
+.faq-item {
+margin-bottom: 1.5rem;
+}
+
+.faq-question {
+font-weight: bold;
+color: #333;
+}
+
+.faq-answer {
+margin-top: 0.5rem;
+color: #444;
+}
+
+.common-mistakes {
+background-color: #fff8f8;
+padding: 1rem;
+border-left: 4px solid #cc0000;
+margin-bottom: 2rem;
+}
+
+.product-box {
+background-color: #f4faff;
+padding: 1rem;
+border: 1px solid #cce0f0;
+border-radius: 12px;
+margin-bottom: 2rem;
+}
+
+.product-box img {
+max-width: 180px;
+float: left;
+margin-right: 1rem;
+}
+
+.product-box h3 {
+margin-top: 0;
+font-size: 1.2rem;
+}
+
+.product-box p {
+overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+.product-box img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+}

@@ -198,5 +198,21 @@
     <loc>https://homefitnessguide.netlify.app/endomorph-body-type</loc>
     <priority>0.8</priority>
 </url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/mesomorph-body-type</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/how-to-fall-asleep-in-30-seconds</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/how-long-does-it-take-to-get-in-shape</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/how-to-do-body-recomposition</loc>
+    <priority>0.8</priority>
+</url>
 
 </urlset>
