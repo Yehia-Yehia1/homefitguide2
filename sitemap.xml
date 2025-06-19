@@ -226,5 +226,13 @@
     <loc>https://homefitnessguide.netlify.app/hiit-for-older-adults</loc>
     <priority>0.8</priority>
 </url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/backyard-chicken-coop-guide</loc>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.netlify.app/japanese-interval-walking</loc>
+    <priority>0.8</priority>
+</url>
 
 </urlset>
