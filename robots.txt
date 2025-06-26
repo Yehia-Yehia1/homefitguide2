@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://homefitnessguide.netlify.app/sitemap.xml
+Sitemap: https://homefitnessguide.pages.dev/sitemap.xml
