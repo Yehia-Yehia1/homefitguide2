@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://www.homefitnessguide.pages.dev/*"
-  to = "https://homefitnessguide.pages.dev/:splat"
-  status = 301
-  force = true
