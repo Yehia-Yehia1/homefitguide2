@@ -1,4 +1,25 @@
 User-agent: *
 Allow: /
 
+# ❌ حظر التكرارات بعد أول "Images" أو "images"
+
+# يبدأ بحرف كبير
+Disallow: /Images/Images/
+Disallow: /Images/Images/Images/
+Disallow: /Images/Images/Images/Images/
+Disallow: /Images/Images/Images/Images/Images/
+Disallow: /Images/Images/Images/Images/Images/Images/
+Disallow: /Images/Images/Images/Images/Images/Images/Images/
+Disallow: /Images/Images/Images/Images/Images/Images/Images/Images/
+
+# يبدأ بحرف صغير (مشاكل نادرة تبدأ بـ "images/")
+Disallow: /images/Images/
+Disallow: /images/Images/Images/
+Disallow: /images/Images/Images/Images/
+Disallow: /images/Images/Images/Images/Images/
+Disallow: /images/Images/Images/Images/Images/Images/
+Disallow: /images/Images/Images/Images/Images/Images/Images/
+Disallow: /images/Images/Images/Images/Images/Images/Images/Images/
+
+# 🔗 السماح لخريطة الموقع فقط
 Sitemap: https://homefitnessguide.pages.dev/sitemap.xml
