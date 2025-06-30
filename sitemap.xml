@@ -15,6 +15,18 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://homefitnessguide.pages.dev/privacy</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.pages.dev/terms</loc>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://homefitnessguide.pages.dev/articles</loc>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://homefitnessguide.pages.dev/coming_soon</loc>
     <priority>0.5</priority>
 </url>

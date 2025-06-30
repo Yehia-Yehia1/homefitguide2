@@ -62,10 +62,10 @@
         <nav class="side-menu" id="sideMenu">
             <a href="privacy.html">Privacy Policies</a>
             <a href="terms.html">Terms of Service</a>
+            <a href="articles.html">All Articles</a>
             <a href="pdfs.html">PDFs</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="coming_soon.html">Affiliates</a>
             <a href="nutrition.html">Nutrition</a>
             <a href="sleep.html">Sleep</a>
             <a href="products.html">Products</a>
@@ -82,417 +82,41 @@
         </div>
     </main>
 
-    <div id="search-bar">
-        <input type="text" id="searchInput" placeholder="Search articles..." />
-        <button type="button" onclick="searchArticles()" id="search-btn">Search</button>
-    </div>
+    <div style="text-align: center;">
+  <a href="articles.html" class="cta-button" >Explore All Articles</a>
+</div>
+
 
 
     <hr />
 
-    <div id="articles">
-        <section aria-label="Featured Articles Section 1">
-            <article class="featured-article">
-                <img src="Images/Gym_equipment.webp"
-                    alt="Home gym equipment including dumbbells, resistance bands, yoga mat, dips bar, and pull-up bar"
-                    class="article-img" />
-                <h2><a href="best-home-gym-equipment-in-2025.html" class="article-link">Best Home Workout Equipment 2025
-                        - Ultimate Guide To Build Strength Fast</a></h2>
-            </article>
+    <section class="top-articles">
+    <h2>Top Articles</h2>
+    <div class="top-articles-grid">
+        <article class="top-article">
+            <a href="cold-plunges-benefits-and-risks-explained.html">
+                <img src="Images/cold-plunges.webp" alt="Cold Plunges: Benefits & Risks" class="top-article-img" />
+                <h3 class="top-article-title">Why Is Everyone Doing Cold Plunges Now? Benefits & Risks Explained</h3>
+            </a>
+        </article>
 
-            <article class="featured-article">
-                <img src="Images/High protein food.webp"
-                    alt="High protein meal with grilled chicken breasts, brown rice, steamed broccoli, fresh spinach, avocado, and a glass of chocolate whey protein smoothie on a light wooden table"
-                    class="article-img" />
-                <h2><a href="best-healthy-meals-for-better-fitness.html" class="article-link">Best Healthy Meals For
-                        Better Fitness</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/A frustrated man struggling to get rid of his excess belly fat.webp"
-                    alt="A frustrated man struggling to get rid of his excess belly fat" class="article-img" />
-                <h2><a href="how-to-lose-belly-fat-fast-at-home.html" class="article-link">How to Lose Belly Fat Fast at
-                        Home?</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Healthy Recipe Book.webp" alt="Healthy Recipe Book" class="article-img" />
-                <h2><a href="best-healthy-recipe-books-to-buy-in-2025.html" class="article-link">Best Healthy Recipe
-                        Books to Buy in 2025</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Fat man wants to lose weight.webp" alt="Fat man wants to lose weight fast"
-                    class="article-img" />
-                <h2><a href="how-to-lose-weight-fast.html" class="article-link">How to Lose Weight Fast: Do's and
-                        Don'ts</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/How Calories are Burned.webp"
-                    alt="Infographic showing how calories are burned through BMR, daily activity, and exercise"
-                    class="article-img" />
-                <h2><a href="how-many-calories-should-you-eat.html" class="article-link">How Many Calories?</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Infographic showing how to calculate TDEE using BMR and activity levels.webp"
-                    alt="Infographic showing how to calculate TDEE using BMR and activity levels" class="article-img" />
-                <h2><a href="how-to-calculate-your-tdee.html" class="article-link">How to Calculate Your TDEE</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Person performing hybrid workout with weights and stretching.webp"
-                    alt="Person performing hybrid workout with weights and stretching" class="article-img" />
-                <h2><a href="hybrid-training.html" class="article-link">Hybrid Training</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/aggressive-cut.webp" alt="Man with very low body-fat percentage and good muscles"
-                    class="article-img" />
-                <h2><a href="how-to-do-aggressive-cut-properly.html" class="article-link">How to Do Aggressive Cut
-                        Properly</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Lean-vs-Clean-Bulk.webp" alt="Lean vs Clean Bulk" class="article-img" />
-                <h2><a href="lean-vs-clean-bulk.html" class="article-link">Lean vs Clean Bulk</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/best-high-calcium-recipes.webp" alt="Best High-Calcium Recipes" class="article-img" />
-                <h2><a href="best-high-calcium-recipes.html" class="article-link">Best High-Calcium Recipes</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Calcium-Intake-Calculator.webp" alt="Calcium Intake Calculator" class="article-img" />
-                <h2><a href="calcium-intake.html" class="article-link">Calcium Calculator</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/mindful-eating.webp" alt="Person eating slowly and mindfully a healthy meal"
-                    class="article-img" />
-                <h2><a href="mindful-eating.html" class="article-link">Mindful Eating</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/increase-height.webp" alt="A Before & After for A man Who Grew Taller"
-                    class="article-img" />
-                <h2><a href="increase-height.html" class="article-link">Increase Your Height</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/stretching-post-workout.webp" alt="Man doing stretches after his workout"
-                    class="article-img" />
-                <h2><a href="stretching-after-workouts.html" class="article-link">Stretching After Workouts</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/macros-guide.webp" alt="Macro breakdown of protein, carbs, and fats"
-                    class="article-img" />
-                <h2><a href="understanding-macros.html" class="article-link">Understanding Macros: The Key to
-                        Optimizing Your Diet</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/track-progress.webp" alt="Tracking fitness data effectively" class="article-img" />
-                <h2><a href="track-your-fitness-progress.html" class="article-link">How to Track Your Fitness Progress
-                        Like a
-                        Pro</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/exercise-snacking.webp"
-                    alt="Quick and repeated exercise sessions throughout the day instead of one long session."
-                    class="article-img" />
-                <h2><a href="exercise-snacking.html" class="article-link">Exercise Snacking</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/japanese-walking.webp" alt="Japanese Walking Method" class="article-img" />
-                <h2><a href="the-japanese-walking-method.html" class="article-link">Japanese Walking Method</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/build-muscles-deficit.webp" alt="How to Build Muscles in a Calorie Deficit"
-                    class="article-img" />
-                <h2><a href="how-to-build-muscles-in-a-calorie-deficit.html" class="article-link">How to Build Muscles
-                        in a Calorie Deficit</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/stress-relief.webp"
-                    alt="A calm man practicing stress management techniques like deep breathing and meditation in a peaceful environment"
-                    class="article-img" />
-                <h2><a href="stress-management-techniques.html" class="article-link">Stress Management Techniques</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/vo2max.webp"
-                    alt="Athlete wearing a VO2 mask during a treadmill test for oxygen uptake measurement"
-                    class="article-img" />
-                <h2><a href="everything-about-vo2-max.html" class="article-link">Everything About VO2 Max</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/endomorph-body-type.webp"
-                    alt="Endomorph male body with wide waist and thick limbs showing fat storage tendency"
-                    class="article-img" />
-                <h2><a href="endomorph-body-type.html" class="article-link">Endomorph Body Type</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/fall-asleep-fast.webp" alt="Person falling asleep quickly in bed"
-                    class="article-img" />
-                <h2><a href="how-to-fall-asleep-in-30-seconds.html" class="article-link">How to Fall Asleep in 30
-                        Seconds</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/body-recomp.webp" alt="Athlete measuring progress on body recomposition"
-                    class="article-img" />
-                <h2><a href="how-to-do-body-recomposition.html" class="article-link">How to Do Body Recomposition</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/bodyweight-muscle.webp"
-                    alt="Strong person doing push-up demonstrating bodyweight muscle training" class="article-img" />
-                <h2><a href="can-you-build-muscle-with-bodyweight.html" class="article-link">Can You Build Muscle With
-                        BodyWeight Exercises Only?</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/chicken-coop.webp" alt="An old woman feeding chicken in a chicken coop"
-                    class="article-img" />
-                <h2><a href="backyard-chicken-coop-guide.html" class="article-link">Backyard Chicken Coop Guide</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/waterproof-watches2.png.webp" alt="comparison of waterproof smartwatches with ECG and long battery life"
-                    class="article-img" />
-                <h2><a href="best-waterproof-smartwatch-fitness-tracker-2025.html" class="article-link">Best Waterproof Fitness Trackers 2025</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/cold-plunges.webp" alt="Cold Plunges: Benefits & Risks"
-                    class="article-img" />
-                <h2><a href="cold-plunges-benefits-and-risks-explained.html" class="article-link">Why Is Everyone Doing Cold Plunges Now? Benefits & Risks Explained</a>
-                </h2>
-            </article>
-        </section>
-
-        <section aria-label="Featured Articles Section 2">
-            <article class="featured-article">
-                <img src="Images/modern-home-gym.webp"
-                    alt="High-end home gym setup with adjustable dumbbells, smart scale, protein supplement, and recovery tools neatly arranged in a modern room"
-                    class="article-img" />
-                <h2><a href="tophigh-end-home-fitness-essentials-in-2025.html" class="article-link">Transform Your Home
-                        Workouts in 2025 with These Elite Fitness Essentials</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Fit man drinking water after workout to support healthy weight loss.webp"
-                    alt="Fit man drinking water after workout to support healthy weight loss" class="article-img" />
-                <h2><a href="how-drinking-water-boosts-weight-loss.html" class="article-link">How Drinking Water Boosts
-                        Weight Loss: Proven Benefits and Tips</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Workout & Mobility Plan PDF Cover.webp" alt="Workout & Mobility Plan PDF Cover"
-                    class="article-img" />
-                <h2><a href="best-home-workouts-and-mobility-plans.html" class="article-link">Workout and Mobility Plans
-                        PDFs</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Injury Frustration.webp" alt="Injured Man" class="article-img" />
-                <h2><a href="how-to-prevent-injuries-during-home-workout.html" class="article-link">How to Prevent
-                        Injuries During Home Workout</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Two people reading a food label showing calories and nutrients on a healthy meal table.webp"
-                    alt="Two people reading a food label showing calories and nutrients on a healthy meal table"
-                    class="article-img" />
-                <h2><a href="calories-guide.html" class="article-link">How Calories Work</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Illustration of BMR Calculation.webp"
-                    alt="illustration of basal metabolic rate calculation showing factors like age, weight, height, and gender"
-                    class="article-img" />
-                <h2><a href="bmr-calculator.html" class="article-link">BMR Calculator</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/protein-intake.webp"
-                    alt="A portion of high-protein food including chicken, eggs, and legumes on a wooden table"
-                    class="article-img" />
-                <h2><a href="protein-intake.html" class="article-link">How Much Protein Do You Really Need?</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Walking person enjoying outdoor exercise for health and fitness.webp"
-                    alt="Walking person enjoying outdoor exercise for health and fitness" class="article-img" />
-                <h2><a href="walking-exercise.html" class="article-link">How Walking Can Be an Exercise</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/summer-physique.webp" alt="A man with a good physique on the beach in the summer"
-                    class="article-img" />
-                <h2><a href="everything-you-need-to-build-a-shredded-summer-physique.html" class="article-link">Shredded
-                        Summer Physique</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Osteoporosis.webp"
-                    alt="A detailed graphic of bones showing osteoporosis damage, promoting bone health and prevention"
-                    class="article-img" />
-                <h2><a href="the-ultimate-guide-to-osteoporosis.html" class="article-link">The Ultimate Guide to
-                        Osteoporosis</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/exercises-for-bone-health.webp" alt="Exercises for Bone Health" class="article-img" />
-                <h2><a href="best-exercises-for-bone-health.html" class="article-link">Best Exercises for Bone
-                        Health</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Two people exercising outdoors to improve health and reduce disease risk.webp"
-                    alt="Two people exercising outdoors to improve health and reduce disease risk"
-                    class="article-img" />
-                <h2><a href="benefits-of-exercise.html" class="article-link">Exercise Benefits</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/natural-supplements.webp" alt="Natural Supplements" class="article-img" />
-                <h2><a href="best-supplements.html" class="article-link">Best Natural Supplements</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/Man Stretching Outdoors.webp" alt="Man Stretching Outdoors" class="article-img" />
-                <h2><a href="mobility-exercises.html" class="article-link">Mobility Exercises</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/fitness-travel.webp" alt="Man doing push-ups in a hotel room" class="article-img" />
-                <h2><a href="maintain-fitness-travel.html" class="article-link">How to Maintain Fitness While
-                        Traveling</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/joint-supplements.webp" alt="Supplements for joints and recovery"
-                    class="article-img" />
-                <h2><a href="best-supplements-joint-health.html" class="article-link">The Best Supplements for Joint
-                        Health and Injury Recovery</a></h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/ai-fitness-2025-banner.webp" alt="AI in fitness technology" class="article-img" />
-                <h2><a href="ai-fitness-technology-2025.html" class="article-link">AI Fitness Technology 2025</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/creatine-benefits.webp" alt="Creatine supplement powder and capsules"
-                    class="article-img" />
-                <h2><a href="creatine-benefits-uses.html" class="article-link">Creatine: Benefits, Uses, & Possible Side
-                        Effects</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/mental-fitness-cover.webp"
-                    alt="Mental fitness concept illustration showing brain activity and cognitive health"
-                    class="article-img" />
-                <h2><a href="mental-fitness.html" class="article-link">Mental Fitness</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/sleep-muscle.webp" alt="Sleep Better to Get More Muscle" class="article-img" />
-                <h2><a href="how-to-sleep-better-for-muscle-gain.html" class="article-link">How to Sleep Better to Gain
-                        More Muscles</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/calorie-burning-exercises.webp"
-                    alt="Athletic man performing high-intensity exercises outdoors, including burpees and jumping rope, showcasing calorie-burning workouts."
-                    class="article-img" />
-                <h2><a href="15-exercises-that-burn-the-most-calories.html" class="article-link">15 Exercises That Burn
-                        The Most Calories</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/ectomorph-body-type.webp"
-                    alt="Slim male ectomorph body type with visible ribs and long limbs" class="article-img" />
-                <h2><a href="ectomorph-body-type.html" class="article-link">Ectomorph Body Type</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/mesomorph-body-type.webp"
-                    alt="Mesomorph male with muscular build and broad shoulders indicating athletic body type"
-                    class="article-img" />
-                <h2><a href="mesomorph-body-type.html" class="article-link">Mesomorph Body Type</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/get-in-shape-timeline.webp"
-                    alt="Fitness timeline showing progress over weeks from beginner to fit" class="article-img" />
-                <h2><a href="how-long-does-it-take-to-get-in-shape.html" class="article-link">How Long Does It Take to
-                        Get in Shape?</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/cutting-without-losing-muscle.webp"
-                    alt="Man flexing muscles with visible definition during a cutting phase" class="article-img" />
-                <h2><a href="complete-guide-to-cutting-without-losing-muscles.html" class="article-link">Complete Guide
-                        to Cutting Without Losing Muscle</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/hiit-older-adults.webp"
-                    alt="Older adult doing modified HIIT with a trainer in a gym setting" class="article-img" />
-                <h2><a href="hiit-for-older-adults.html" class="article-link">How to Start
-                        HIIT Safely?</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/japanese-interval-walking.webp"
-                    alt="Person Power-walking briskly on a leafly park path during japanese interval walking session"
-                    class="article-img" />
-                <h2><a href="japanese-interval-walking.html" class="article-link">How to Do Japanese Interval Walking:
-                        Better Than 10,000 Steps</a>
-                </h2>
-            </article>
-
-            <article class="featured-article">
-                <img src="Images/15-minute-home-workout-plan.webp"
-                    alt="The Ultimate 15-Minute Home Workout Plan"
-                    class="article-img" />
-                <h2><a href="the-ultimate-15-minute-home-workout-plan.html" class="article-link">The Ultimate 15-Minute Home Workout Plan (No Equipment Needed)</a>
-                </h2>
-            </article>
-        </section>
+        <article class="top-article">
+            <a href="the-ultimate-15-minute-home-workout-plan.html">
+                <img src="Images/15-minute-home-workout-plan.webp" alt="The Ultimate 15-Minute Home Workout Plan" class="top-article-img" />
+                <h3 class="top-article-title">The Ultimate 15-Minute Home Workout Plan (No Equipment Needed)</h3>
+            </a>
+        </article>
     </div>
+</section>
 
     <script src="scripts.js"></script>
-</body>
+    <footer class="site-footer">
+    <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Home Fitness Guide. All rights reserved.</p>
+</footer>
 
+</body>
 </html>
