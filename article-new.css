@@ -89,7 +89,7 @@ ul {
 /* Sections */
 .common-mistakes, .faq-section, .related-articles, .product-recommendations {
   background-color: #f9f9f9;
-  border-left: 4px solid #0077cc;
+  border-left: 4px solid #51a105;
   padding: 20px;
   margin: 30px 0;
   border-radius: 10px;
@@ -136,4 +136,32 @@ footer a:hover {
   body {
     padding: 15px;
   }
+}
+.cta-button {
+  display: inline-block;
+  background-color: #51a105;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.conclusion{ background-color: #f9f9f9;
+  border-left: 4px solid #51a105;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 10px;}
+
+  .cta-button2 {
+  display: inline-block;
+  background-color: #51a105;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none;
 }
