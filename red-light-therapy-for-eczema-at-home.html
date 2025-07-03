@@ -230,7 +230,6 @@
   <p>Whether you're targeting skin conditions like eczema, improving muscle recovery, or simply optimizing wellness, <strong>red light therapy at home</strong> is a practical and proven tool. With new technologies making it more accessible than ever, now is the perfect time to explore its full potential.</p>
 </section>
 
-      </section>
 
 <section class="conclusion">
 <h2>Conclusion: Is Red Light Therapy at Home Worth It?</h2>
@@ -392,6 +391,32 @@
     });
   });
 </script>
+<script>
+  const sections = document.querySelectorAll("main.article-container h2[id]");
+  const navLinks = document.querySelectorAll(".table-of-contents a");
+
+  function activateLink() {
+    let currentSectionId = "";
+
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom > 100) {
+        currentSectionId = section.id;
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + currentSectionId) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateLink);
+  window.addEventListener("DOMContentLoaded", activateLink);
+</script>
+
 
 </body>
 </html>
