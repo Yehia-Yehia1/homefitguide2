@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tools - Home Fitness Guide</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        main.fitness-section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        main.fitness-section h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .article-card {
+            display: flex;
+            flex-direction: column;
+            background: #f9f9f9;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .article-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article-content a {
+            text-decoration: none;
+            color: #222;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .article-content a:hover {
+            color: #007bff;
+        }
+
+        footer.footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+    <link rel="canonical" href="https://homefitnessguide.pages.dev/tools" />
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="HomeFitnessGuide Logo" class="logo-img" />
+            <a href="index.html" class="logo-text">Home Fitness Guide</a>
+        </div>
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+        <a href="/pdfs.html">PDFs</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/coming_soon.html">Affiliates</a>
+        <a href="/nutrition.html">Nutrition</a>
+        <a href="/coming_soon.html">Sleep</a>
+        <a href="/products.html">Products</a>
+        <a href="/fitness.html">Fitness</a>
+        <a href="/coming_soon.html">Supplements</a>
+        <a href="weightloss.html">Weight Loss</a>
+    </nav>
+
+    <main class="fitness-section">
+        <h1>Fitness Articles</h1>
+
+        <div class="article-card">
+            <img src="Images/Illustration of BMR Calculation.webp"
+                alt="Fit man drinking water after workout to support healthy weight loss">
+            <div class="article-content">
+                <a href="bmr-calculator.html">BMR Calculator</a>
+            </div>
+        </div>
+
+        <div class="article-card">
+            <img src="Images/Calcium-Intake-Calculator.webp" alt="Workout & Mobility Plan PDF Cover">
+            <div class="article-content">
+                <a href="calcium-intake.html">Calcium Intake Calculator</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Home Fitness Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sideMenu').classList.toggle('active');
+        }
+
+        document.addEventListener('click', function (event) {
+            const sideMenu = document.getElementById('sideMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const isClickInsideMenu = sideMenu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && sideMenu.classList.contains('active')) {
+                sideMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
