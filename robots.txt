@@ -23,4 +23,3 @@ Disallow: /images/Images/Images/Images/Images/Images/Images/Images/
 
 # 🔗 السماح لخريطة الموقع فقط
 Sitemap: https://homefitnessguide.pages.dev/sitemap.xml
-Sitemap: https://homefitnessguide.pages.dev/sitemap.html
