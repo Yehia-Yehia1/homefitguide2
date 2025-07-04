@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore fitness tools and calculators like BMR and Calcium intake to optimize your health and wellness at home." />
+<meta name="keywords" content="BMR calculator, fitness tools, health calculators, calcium intake calculator, home fitness tools" />
+<meta property="og:title" content="Fitness Tools and Calculators - Home Fitness Guide" />
+<meta property="og:description" content="Accurate and helpful fitness calculators to optimize your home workout and health plan." />
+
     <title>Tools - Home Fitness Guide</title>
 
     <link rel="stylesheet" href="index.css" />
@@ -58,8 +63,40 @@
             color: #fff;
             margin-top: 40px;
         }
+        @media (max-width: 768px) {
+  .article-card {
+    flex-direction: column;
+  }
+
+  .article-content h2 {
+    font-size: 1rem;
+  }
+}
+
     </style>
     <link rel="canonical" href="https://homefitnessguide.pages.dev/tools" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Fitness Tools",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://homefitnessguide.pages.dev/bmr-calculator.html",
+      "name": "BMR Calculator"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://homefitnessguide.pages.dev/calcium-intake.html",
+      "name": "Calcium Intake Calculator"
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -91,22 +128,23 @@
     </nav>
 
     <main class="fitness-section">
-        <h1>Fitness Articles</h1>
+        <h1>Tools</h1>
 
-        <div class="article-card">
-            <img src="Images/Illustration of BMR Calculation.webp"
-                alt="Fit man drinking water after workout to support healthy weight loss">
-            <div class="article-content">
-                <a href="bmr-calculator.html">BMR Calculator</a>
-            </div>
-        </div>
+        <a href="bmr-calculator.html" class="article-card">
+  <img src="Images/Illustration of BMR Calculation.webp" alt="...">
+  <div class="article-content">
+    <h2>BMR Calculator</h2>
+  </div>
+</a>
 
-        <div class="article-card">
-            <img src="Images/Calcium-Intake-Calculator.webp" alt="Workout & Mobility Plan PDF Cover">
-            <div class="article-content">
-                <a href="calcium-intake.html">Calcium Intake Calculator</a>
-            </div>
-        </div>
+
+        <a href="calcium-intake.html" class="article-card">
+  <img src="Images/Calcium-Intake-Calculator.webp" alt="...">
+  <div class="article-content">
+    <h2>Calcium Intake Calculator</h2>
+  </div>
+</a>
+
 
     </main>
 
