@@ -297,3 +297,48 @@ h2[id] {
 html {
   scroll-behavior: smooth;
 }
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.top-article {
+  min-width: 280px;
+  flex: 0 0 auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffffcc;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn.left {
+  left: 5px;
+}
+
+.carousel-btn.right {
+  right: 5px;
+}
